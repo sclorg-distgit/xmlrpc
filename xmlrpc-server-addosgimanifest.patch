@@ -1,0 +1,15 @@
+--- pom.xml	2014-07-07 11:24:52.668887604 -0400
++++ pom.xml.sav	2014-07-07 11:25:06.174916380 -0400
+@@ -48,6 +48,12 @@
+               <Implementation-Vendor-Id>org.apache</Implementation-Vendor-Id>
+               <Implementation-Vendor>Apache Software Foundation</Implementation-Vendor>
+               <Implementation-Version>${project.version}</Implementation-Version>
++	      <Bundle-ManifestVersion>1</Bundle-ManifestVersion>
++              <Bundle-Name>%Bundle-Name</Bundle-Name>
++              <Bundle-SymbolicName>org.apache.xmlrpc.server</Bundle-SymbolicName>
++	      <Bundle-Version>${project.version}</Bundle-Version>
++	      <Require-Bundle>org.apache.xmlrpc.common</Require-Bundle>
++	      <Export-Package>org.apache.xmlrpc.server,org.apache.xmlrpc.webserver</Export-Package>
+             </manifestEntries>
+           </archive>
+         </configuration>
